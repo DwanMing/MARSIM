@@ -49,7 +49,7 @@
         <remap from="~cmd_RPM" to="/quad_$(arg drone_id)/cmdRPM"/>
         <remap from="~cmd_pose" to="/goal"/>
         <!--/quad_$(arg drone_id)/pos_cmd  -->
-        <remap from="~position_cmd" to="/quad_$(arg drone_id)/planning/pos_cmd"/>
+        <remap from="~position_cmd" to="/planning/pos_cmd"/>
         <param name="controller_rate" value="200"/>
         <param name="quadrotor_name" value="quad_$(arg drone_id)"/>
         <param name="init_state_x" value="$(arg init_x_)"/>
